@@ -1,3 +1,5 @@
+# @author: Ana Antonia Dias Maile
+
 library(dplyr)
 library("lme4")
 library("lmerTest")
