@@ -1,0 +1,17 @@
+{
+    "task":"restingstate",
+    "apply_proj":true,
+    "update_annot":false,
+    "ep_info":{
+                "fixed_epoch_length":10,
+                "overlap":0,
+                "epoch_length_art":3
+    },
+    "seed":10,
+    "n_jobs":7,
+    "file_src":"origin",
+    "preICA_clean":"run",
+    "postICA_clean":"run",
+    "compute_ica":"run",
+    "inspect_ica":"run"
+}

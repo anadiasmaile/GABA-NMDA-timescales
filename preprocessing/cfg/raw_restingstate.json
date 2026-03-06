@@ -1,0 +1,28 @@
+{ 
+    "task":"restingstate",
+    "ep_info":{
+                    "stim_min":-0.8,
+                    "stim_max":3,
+                    "trial_trg":[4],
+                    "block_trg":1,
+                    "bad_buffer":0.5
+    },
+    "sss_settings":{
+                    "limit":3,
+                    "min_count":20,
+                    "duration":3
+    },
+    "st_duration":50,
+    "st_correlation":0.99,
+    "lp_freq":0.1,
+    "zap_comp":10,
+    "seed":10,
+    "n_jobs":10,
+    "file_src":"origin",
+    "bad_periods":"skip",
+    "zapline":true,
+    "hp_filt":true,
+    "otp":false,
+    "find_bads":"skip",
+    "sss":false
+}
