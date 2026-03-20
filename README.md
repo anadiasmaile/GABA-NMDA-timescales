@@ -18,7 +18,7 @@ It includes workflows for:
 - Statistical testing  
 - Figure generation  
 
-The pipeline integrates signal processing, computational modeling, and statistical analysis to investigate how GABAergic and NMDA-mediated processes shape cortical dynamics.
+The pipeline integrates signal processing, computational modeling, and statistical analysis to investigate how GABA- and NMDA-mediated receptor activity shape cortical dynamics.
 
 📄 **Manuscript / preprint:** *To be added*
 
@@ -26,9 +26,9 @@ The pipeline integrates signal processing, computational modeling, and statistic
 
 ## Repository structure
 - preprocessing (filtering, artefact removal)
-- source_reconstruction (source reconstruction, parcellating)
-- computation_of_timescales ( calculation of power spectra and timescales across the cortex, calculation of network-specific timescales across cortex)
-- analysis_of_timescales (associations with T1T2 maps, condition contrasts, plotting)
+- source_reconstruction (source reconstruction, atlas parcellating)
+- computation_of_timescales (calculation of power spectra and timescales across the cortex, calculation of network-specific timescales across cortex)
+- analysis_of_timescales (associations with publicly avaible T1wT2w map and timescale map, condition contrasts, plotting)
 - inference_of_tde_hmm (preparation & running of TDE-HMM, calculation of network descriptions & metrics)
 - analyses_of_network_specific_timescales (dynamic & condition contrasts for network-specific timescales)
 - analyses_of_network_dynamics (condition contrasts for state metrics and tranistion probabilities)
@@ -45,7 +45,9 @@ The analysis pipeline consists of the following major steps:
 
 2. **Timescale Estimation**  
    - Power spectral density (PSD) estimation  
-   - Extraction of timescales using spectral parameterization (fooof) 
+   - Extraction of timescales using spectral parameterization (fooof)
+   - condition contrasts
+   - statistical comparisons with publicly available maps
 
 3. **Dynamic Network Inference**  
    - Time-delay embedded Hidden Markov Models (TDE-HMM)  
@@ -67,9 +69,13 @@ The analysis pipeline consists of the following major steps:
 
 ### Core environments
 
-- **Preprocessing & timescale analysis**
-  - MNE-Python  
-  - FOOOF  
+- **Preprocessing**
+   - MNE-Python
+   - eduTools
+     
+- **Timescale analysis**
+  - FOOOF
+  - neuromaps 
 
 - **Dynamic network analysis**
   - OSL-Dynamics  
@@ -77,9 +83,11 @@ The analysis pipeline consists of the following major steps:
 ### Installation
 
 - MNE: __[https://mne.tools/stable/install/index.html](https://mne.tools/stable/install/index.html)__
-- FOOOF: __[https://fooof-tools.github.io/fooof/](https://fooof-tools.github.io/fooof/)__ 
+- eduTools: __[https://github.com/eort/eduTools](https://github.com/eort/eduTools)__
+- FOOOF: __[https://fooof-tools.github.io/fooof/](https://fooof-tools.github.io/fooof/)__
+- neuromaps: __[https://github.com/netneurolab/neuromaps.git](https://github.com/netneurolab/neuromaps.git)__
 - OSL-Dynamics: __[https://osl-dynamics.readthedocs.io/en/latest/](https://osl-dynamics.readthedocs.io/en/latest/)__ 
 
 We recommend using separate virtual environments for:
-- Signal processing (MNE + FOOOF)
+- Signal processing (MNE + eduTools + FOOOF + neuromaps)
 - Network modeling (OSL-Dynamics)
