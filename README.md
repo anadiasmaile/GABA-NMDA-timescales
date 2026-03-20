@@ -18,7 +18,7 @@ It includes workflows for:
 - Statistical testing  
 - Figure generation  
 
-The pipeline integrates signal processing, computational modeling, and statistical analysis to investigate how GABA- and NMDA-mediated receptor activity shape cortical dynamics.
+The pipeline integrates signal processing, computational modeling, and statistical analysis to investigate how GABA- and NMDA-mediated receptor activity shapes cortical dynamics.
 
 📄 **Manuscript / preprint:** *To be added*
 
@@ -46,8 +46,6 @@ The analysis pipeline consists of the following major steps:
 2. **Timescale Estimation**  
    - Power spectral density (PSD) estimation  
    - Extraction of timescales using spectral parameterization (fooof)
-   - condition contrasts
-   - statistical comparisons with publicly available maps
 
 3. **Dynamic Network Inference**  
    - Time-delay embedded Hidden Markov Models (TDE-HMM)  
@@ -85,7 +83,7 @@ The analysis pipeline consists of the following major steps:
 - MNE: __[https://mne.tools/stable/install/index.html](https://mne.tools/stable/install/index.html)__
 - eduTools: __[https://github.com/eort/eduTools](https://github.com/eort/eduTools)__
 - FOOOF: __[https://fooof-tools.github.io/fooof/](https://fooof-tools.github.io/fooof/)__
-- neuromaps: __[https://github.com/netneurolab/neuromaps.git](https://github.com/netneurolab/neuromaps.git)__
+- neuromaps: __[https://github.com/netneurolab/neuromaps](https://github.com/netneurolab/neuromaps)__
 - OSL-Dynamics: __[https://osl-dynamics.readthedocs.io/en/latest/](https://osl-dynamics.readthedocs.io/en/latest/)__ 
 
 We recommend using separate virtual environments for:
