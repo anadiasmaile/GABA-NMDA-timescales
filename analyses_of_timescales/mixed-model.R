@@ -20,7 +20,7 @@ path <- getwd()
 ## LOAD DATA ##
 ###############
 # load fits
-fits = read.csv("fooof_fits_pervertex_allexp.csv")
+fits = read.csv("spectral_fits_per_vertex.csv")
 fits = fits[,3:ncol(fits)]
 # load t1t2
 t1t2 = read.csv("t1t2values.csv")
