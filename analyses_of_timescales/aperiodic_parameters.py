@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 root = "."
 plot_path = op.join(root,"plots")
 # load fits
-fits = pd.read_csv(op.join(root, "fooof_fits_pervertex_allexp.csv"))
+fits = pd.read_csv(op.join(root, "spectral_fits_per_vertex.csv"))
 # load settings
 drugs = np.unique(fits["drug"])
 parcellation_file=('/Users/antoniadiasmaile/miniconda3/envs/osle/lib/python3.12/'
