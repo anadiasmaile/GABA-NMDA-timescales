@@ -35,7 +35,7 @@ map_lh = map[0]
 map_rh = map[1]
 # load timescales
 root = "."
-fits = pd.read_csv(op.join(root, "fooof_fits_pervertex_allexp.csv"))
+fits = pd.read_csv(op.join(root, "spectral_fits_per_vertex.csv"))
 time_constant = fits.groupby(['sub', 'drug', 'label'], as_index=False)
                              ['time_constant'].median()[["sub","drug",
                                                          "label","time_constant"]]
