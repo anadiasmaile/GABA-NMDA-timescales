@@ -20,7 +20,7 @@ It includes workflows for:
 
 The pipeline integrates signal processing, computational modeling, and statistical analysis to investigate how GABA- and NMDA-mediated receptor activity shapes cortical dynamics.
 
-📄 **Manuscript / preprint:** (https://www.biorxiv.org/content/10.64898/2026.05.11.723797v1)
+📄 **Manuscript / preprint:** https://www.biorxiv.org/content/10.64898/2026.05.11.723797v1
 
 ---
 
