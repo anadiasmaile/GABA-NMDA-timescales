@@ -89,3 +89,11 @@ The analysis pipeline consists of the following major steps:
 We recommend using separate virtual environments for:
 - Signal processing (MNE + eduTools + FOOOF + neuromaps)
 - Network modeling (OSL-Dynamics)
+
+---
+
+### Processed Data
+
+Processed data required to reproduce the main analyses are available via OSF:
+
+🔗 https://doi.org/10.17605/OSF.IO/7P4KC
